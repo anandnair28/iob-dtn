@@ -21,10 +21,10 @@ func main() {
 	flag.Parse()
 
 	policies := []policy.Policy{
-		//policy.New(policy.KONP_POLICY),
-		//policy.New(policy.NP_POLICY),
-		//policy.New(policy.GPP_POLICY),
-		//policy.New(policy.LC_POLICY),
+		policy.New(policy.KONP_POLICY),
+		policy.New(policy.NP_POLICY),
+		policy.New(policy.GPP_POLICY),
+		policy.New(policy.LC_POLICY),
         //policy.New(policy.RPP_POLICY),
         //policy.New(policy.RPP1_POLICY),
         //policy.New(policy.RPP2_POLICY),
