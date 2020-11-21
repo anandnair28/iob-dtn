@@ -25,7 +25,7 @@ func main() {
 		policy.New(policy.NP_POLICY),
 		policy.New(policy.GPP_POLICY),
 		policy.New(policy.LC_POLICY),
-        //policy.New(policy.RPP_POLICY),
+        policy.New(policy.RPP_POLICY),
         //policy.New(policy.RPP1_POLICY),
         //policy.New(policy.RPP2_POLICY),
         //policy.New(policy.RPP3_POLICY),
