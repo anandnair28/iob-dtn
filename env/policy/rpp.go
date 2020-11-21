@@ -9,7 +9,7 @@ import (
 // when a packet is received, it replaces the oldest generated packet.
 // But if there are only received packets, then it replaces the oldest one.
 // If a packet is generated while the buffer is full, it is discarded.
-//rpp -new> rpp-old > gpp - old > gpp-new
+//rp-new> rp-old > gp-new > gp-old
 
 type RPP struct {
 	basePolicy
