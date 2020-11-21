@@ -5,17 +5,17 @@ import (
 	"iob-dtn/env/sensor/buffer/packet"
 )
 
-// RPP Received Packet Priority
+// RPP-1 Received Packet Priority
 // when a packet is received, it replaces the oldest generated packet.
 // But if there are only received packets, then it replaces the oldest one.
 // If a packet is generated while the buffer is full, it is discarded.
 //rp-new> rp-old > gp-new > gp-old
 
-type RPP struct {
+type RPP1 struct {
 	basePolicy
 }
 
-func (g RPP) CreateSlot(b buffer.Buffer, p packet.Packet, sensor_id int) (int, error) {
+func (g RPP1) CreateSlot(b buffer.Buffer, p packet.Packet, sensor_id int) (int, error) {
 	index, err := g.getFreeSlot(b)
 	if err == nil {
 		return index, nil

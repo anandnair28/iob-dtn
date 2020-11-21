@@ -25,18 +25,24 @@ func main() {
 		//policy.New(policy.NP_POLICY),
 		//policy.New(policy.GPP_POLICY),
 		//policy.New(policy.LC_POLICY),
-        policy.New(policy.RPP_POLICY),
+        //policy.New(policy.RPP_POLICY),
+        //policy.New(policy.RPP1_POLICY),
+        //policy.New(policy.RPP2_POLICY),
+        //policy.New(policy.RPP3_POLICY),
+        //policy.New(policy.RPP4_POLICY),
 	}
 
-	//names := []string{"konp", "np", "gpp", "lc", "rpp"}
-    //names := []string{"konp", "np"}
-    //names := []string{"gpp"}
-    //names := []string{"lc", "rpp"}
+	names := []string{"konp", "np", "gpp", "lc", "rpp"}
     //names := []string{"konp"}
     //names := []string{"np"}
     //names := []string{"gpp"}
     //names := []string{"lc"}
-    names := []string{"rpp"}
+    //names := []string{"rpp"}
+    //names := []string{"rpp1", "rpp2", "rpp3", "rpp4"}
+    //names := []string{"rpp1"}
+    //names := []string{"rpp2"}
+    //names := []string{"rpp3"}
+    //names := []string{"rpp4"}
 
 	for i, p := range policies {
 		RunSimulationWithPolicy(p, simulationTime, names[i])
