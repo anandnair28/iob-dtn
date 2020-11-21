@@ -38,6 +38,14 @@ plot(rpp, 'm', 'RPP')
 #plot(rpp3, 'c', "RPP3")
 #plot(rpp4, 'm', "RPP4")
 
+#n2 = pd.read_csv("result_delay_2.csv")
+#n8 = pd.read_csv("result_delay_8.csv")
+#nUL = pd.read_csv("result_delay_UL.csv")
+
+#plot(n2, 'b', 'NC = 2')
+#plot(n8, 'g', 'NC = 8')
+#plot(nUL, 'r', 'NC = UL')
+
 plt.xlabel('delays')
 plt.ylabel('cdf')
 plt.grid()

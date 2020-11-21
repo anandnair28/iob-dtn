@@ -40,6 +40,14 @@ plot(rpp, 'm', 'RPP')
 #plot(rpp3, 'c', "RPP3")
 #plot(rpp4, 'm', "RPP4")
 
+#n2 = pd.read_csv("result_lr_2.csv")
+#n8 = pd.read_csv("result_lr_8.csv")
+#nUL = pd.read_csv("result_lr_UL.csv")
+
+#plot(n2, 'b', 'NC = 2')
+#plot(n8, 'g', 'NC = 8')
+#plot(nUL, 'r', 'NC = UL')
+
 plt.xlabel('loss rate')
 plt.ylabel('cdf')
 plt.grid()
